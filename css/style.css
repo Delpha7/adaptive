@@ -1,0 +1,401 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.header {
+  position: relative;
+  padding: 80px 0 0;
+}
+.logo {
+  height: 60px;
+  text-align: center;
+  margin: 0 0 80px;
+}
+.btn-burger,
+.btn-close {
+  display: none;
+  border: 0;
+  background: none;
+  padding: 0;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 80px 0;
+}
+.link {
+  margin: 0 40px 0 40px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #005BBB;
+  text-decoration: none;
+}
+.link:hover {
+  color: blueviolet;
+}
+.introduction {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 28px;
+  line-height: 40px;
+  color: #005BBB;
+  padding: 0 0 80px 0;
+}
+.introduction p {
+  margin: 0 0 10px 0;
+}
+.caption {
+  max-width: 1025px;
+  font-weight: 900;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #005BBB;
+  margin: 0 auto 40px;
+  text-align: center;
+  border-top: 1px solid #005BBB;
+  line-height: 50px;
+  padding: 15px 0;
+  position: relative;
+}
+.caption:after {
+  content: "";
+  width: 100%;
+  max-width: 500px;
+  height: 1px;
+  background: #005BBB;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0 0 0 -250px;
+}
+.text {
+  display: flex;
+  color: #fff;
+  width: 100%;
+  justify-content: center;
+}
+.box {
+  background-color: #005BBB;
+  font-size: 18px;
+  line-height: 25px;
+  flex: 0 0 500px;
+  display: flex;
+  align-items: center;
+  margin: 0 12px 80px 12px;
+}
+.box-line {
+  padding: 0 10px 0 0;
+  width: 10px;
+  height: 400px;
+  background-color: #FFD500;
+}
+.box p {
+  margin: 40px;
+}
+.number {
+  font-size: 48px;
+  line-height: 70px;
+}
+.message {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #005BBB;
+  max-width: 1025px;
+  height: 120px;
+}
+.message-text {
+  font-size: 18px;
+  line-height: 22px;
+  opacity: 0.5;
+  color: #005BBB;
+  padding: 50px 0 50px 30px;
+}
+.btn-send {
+  background: #005BBB;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 15px 55px;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  font-family: 'Montserrat';
+  margin: 30px 30px 30px 0;
+}
+.btn:hover {
+  background: #fff;
+  color: #005BBB;
+  border: 2px solid #005BBB;
+}
+.gallery {
+  max-width: 1350px;
+  margin: 0 auto 80px;
+}
+.slick-slide {
+  border: solid #fff;
+  border-width: 0 20px;
+  position: relative;
+}
+.slick-slide img {
+  width: 100%;
+}
+.slick-slide:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 91, 187, 0.2), rgba(0, 91, 187, 0.2));
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-image: linear-gradient(to bottom, #005BBB 50%, #FFD500 50%) 1 1;
+  border-image: linear-gradient(to bottom, #005BBB 50%, #FFD500 50%) 1 1;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.slick-dots li {
+  margin: 0 10px;
+}
+.slick-dots button {
+  border: 1px solid #005BBB;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  font-size: 0;
+  padding: 0;
+}
+.slick-dots .slick-active button {
+  background: #005BBB;
+}
+@media only screen
+and (max-width: 1199px) {
+  .wrapper {
+    padding: 0 60px;
+  }
+  .text {
+    display: block;
+  }
+  .box {
+    margin: 0 0 28px;
+  }
+  .introduction {
+    font-size: 24px;
+  }
+  .caption {
+    font-size: 30px;
+  }
+  .gallery {
+    margin: 0 -20px 80px;
+  }
+}
+@media (max-width:1025px) {
+  .wrapper {
+    padding-top: 188px;
+  }
+  .header {
+    width: 100%;
+    padding: 48px 60px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .navigation {
+    display: none;
+  }
+  .logo {
+    text-align: left;
+    margin-bottom: 120px;
+  }
+  .btn-burger,
+  .btn-close {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 60px;
+  }
+  .btn-close {
+    display: none;
+  }
+  .menu-open.header {
+    background: #005BBB;
+  }
+  .menu-open .logo svg * {
+    fill: #fff;
+  }
+  .menu-open .btn-burger {
+    display: none;
+  }
+  .menu-open .btn-close {
+    display: block;
+  }
+  .menu-open .navigation {
+    display: block;
+    text-align: left;
+    padding: 0 0 72px;
+    margin: 0;
+}
+  .menu-open .link {
+  color: #fff;
+  display: block;
+  margin: 0 0 48px;
+}
+  .gallery {
+    padding-top: 80px;
+  }
+}
+@media only screen
+and (max-width: 900px) {
+  .introduction {
+    font-size: 16px;
+    margin-bottom: 48px;
+  }
+  .caption {
+    font-size: 20px;
+  }
+  .number {
+    font-size: 24px;
+    display: block;
+    margin: 0 0 5px;
+  }
+  .caption:after {
+    max-width: unset;
+    left: 0;
+    margin: 0;
+  }
+  .box-text {
+    font-size: 16px;
+  }
+  .message {
+    margin-bottom: 100px;
+    display: block;
+    position: relative;
+    padding: 20px;
+  }
+  .message-text {
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    padding: 0;
+  }
+  .btn-send {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -80px;
+    margin: 0;
+  }
+  .btn-send:hover {
+    background: #fff;
+    color: #005BBB;
+    border: 2px solid #005BBB;
+  }
+}
+@media (max-width:600px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+  .gallery {
+    margin-bottom: 50px;
+  }
+  .slick-slide {
+  border: 0;
+  }
+  .slick-dots {
+    margin-top: 25px;
+  }
+  .slick-dots button {
+  width: 8px;
+   height: 8px;
+   margin: 0 4px;
+  }
+  .header {
+  padding: 20px 20px 0;
+  }
+  .menu-open.header {
+    min-height: 100vh;
+    position: fixed;
+  }
+  .logo {
+    display: none;
+  }
+  .btn-burger svg * {
+    fill: #fff;
+  }
+  .menu-open .logo {
+    display: block;
+    margin-bottom: 50px;
+  } 
+  .menu-open .logo svg {
+    width: 55px;
+    height: 47px;
+  }
+  .btn-burger,
+  .btn-close {
+    top: 20px;
+    right: 20px;
+  }
+  .btn {
+    position: absolute;
+  }
+}
